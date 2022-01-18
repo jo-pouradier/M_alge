@@ -4,10 +4,10 @@ A=diag(3*ones(1,3),1) + diag(-2*ones(1,3),-1) + diag([1 2 3 4],0);
 
 B=2*ones(3,4);
 
-% concaténation des matrices A et B
+% concatÃ©nation des matrices A et B
 M=[A;B];
 
-% décomposition en valeurs singulières de M
+% dÃ©composition en valeurs singuliÃ¨res de M
 [u,s,v]=svd(M);
 
 % reconstruction de la matrice M

@@ -24,7 +24,7 @@ k=[5,40,100,200];
 E = imread(image);
 figure(1)
 imshow(E);
-E=E(:,:,1);
+E=E(:,:,1); %on prend qu'un canal de couleur de l'image (RGB)
 [m,n]=size(E);
 
 [U,S,V]=svd(double(E));

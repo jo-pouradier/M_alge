@@ -2,7 +2,8 @@
 % construction des matrices A et B (SANS BOUCLE FOR NI WHILE)
 question=2;
 switch question
-    case 1
+    case 1 %cas d'une matrice
+    
         A=diag(3*ones(1,3),1) + diag(-2*ones(1,3),-1) + diag([1 2 3 4],0); 
 
         B=2*ones(3,4);
@@ -21,7 +22,9 @@ switch question
          M2= M2 + s(i,i) * u(:,i)* v(:,i)';
         end
     
-    case 2
+    
+    case 2 %cas d'une image en gris
+    
         %image=input("nom de l'image a ouvrir: ");
         image='einstein.jpg'; %nom d'une image a compresser de n'importe quelle taille
         k=[5,40,100,200];
